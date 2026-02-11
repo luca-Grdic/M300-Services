@@ -1,55 +1,55 @@
-Fragen
-Cloud Computing
-Was versteht man unter Cloud-Computing?
+# Fragen und Antworten zu Cloud Computing & Vagrant
 
-Antwort
-Darunter versteht man die Ausführung von Programmen, die nicht auf dem lokalen Rechner installiert sind, sondern auf einem anderen Rechner, der aus der Ferne aufgerufen wird (bspw. über das Internet).
+## Cloud Computing
 
-Was versteht man unter Infrastructure as a Service - IaaS?
+**Was versteht man unter Cloud-Computing?**
 
-Antwort
-Die Infrastruktur stellt die unterste Schicht im Cloud Computing dar. Der Benutzer greift hier auf bestehende Dienste innerhalb des Systems zu, verwaltet seine Recheninstanzen (virtuelle Maschinen) allerdings weitestgehend selbst.
+> Darunter versteht man die Nutzung von IT-Infrastruktur und Programmen, die nicht auf dem eigenen lokalen Rechner installiert sind, sondern auf entfernten Servern ausgeführt und über das Netzwerk (meist das Internet) aufgerufen werden.
 
-Infrastructure as Code
-Was ist der Unterschied zur manuellen Installation der VM
+**Was versteht man unter Infrastructure as a Service (IaaS)?**
 
-Antwort
-Automation, Wiederholbarkeit, Dokumentation
+> IaaS bildet die unterste Ebene des Cloud-Computings. Der Anbieter stellt die Hardware-Ressourcen bereit, während der Benutzer seine Instanzen (wie virtuelle Maschinen) selbst aufsetzt und das Betriebssystem sowie die Software weitestgehend eigenständig verwaltet.
 
-Vagrant
-Was wird mit Vagrant erzeugt?
+---
 
-Antwort
- Virtuelle Maschinen
+## Infrastructure as Code (IaC)
 
-Welche der Aussagen treffen zu:
+**Was ist der Hauptunterschied zur manuellen Installation einer VM?**
 
-a) Vagrant ist ein HyperVisor
-b) Vagrant erzeugt virtuelle Maschinen, dabei werden mehrere HyperVisor und Cloud Umgebungen (z.B. AWS) unterstützt.
-c) Vagrant erzeugt Container
-Antwort
- b)
+> Die wesentlichen Vorteile liegen in der vollständigen **Automatisierung**, der exakten **Wiederholbarkeit** des Setups und der integrierten **Dokumentation** durch den Code.
 
-In welchen Bereich des Cloud-Computings ist Vagrant einzuordnen: IaaS, PaaS, SaaS?
+---
 
-Antwort
- IaaS
+## Vagrant
 
-Welche Alternativen zu Vagrant bestehen?
+**Was wird mit Vagrant erzeugt?**
 
-Antwort
- https://alternativeto.net/software/vagrant/
+> Es werden virtuelle Maschinen (VMs) erzeugt und verwaltet.
 
-Wo Speichert Vagrant seine Konfiguration?
+**Welche der Aussagen treffen zu?**
 
-Antwort
- Vagrantfile
+* a) Vagrant ist ein HyperVisor.
+* **b) Vagrant erzeugt virtuelle Maschinen; dabei werden mehrere HyperVisor und Cloud-Umgebungen (z. B. AWS) unterstützt.**
+* c) Vagrant erzeugt Container.
 
-Was bedeutet die Fehlermeldung "A Vagrant environment or target machine is required to run this command."?
+> **Antwort:** b) ist korrekt.
 
-Antwort
- Sie befinden im falschen Verzeichnis, wo keine Vagrantfile vorhanden ist.
-Bei welcher LPI Zertifizierung nützt mir das Vagrant Wissen?
+**In welchen Bereich des Cloud-Computings ist Vagrant einzuordnen: IaaS, PaaS oder SaaS?**
 
-Antwort
- [DevOps Tools Engineer](https://www.lpi.org/our-certifications/devops-overview)
+> Vagrant ist im Bereich **IaaS** (Infrastructure as a Service) einzuordnen.
+
+**Welche Alternativen zu Vagrant bestehen?**
+
+> Eine Übersicht bekannter Alternativen findest du hier: [AlternativeTo - Vagrant](https://alternativeto.net/software/vagrant/)
+
+**Wo speichert Vagrant seine Konfiguration?**
+
+> Die gesamte Konfiguration wird im sogenannten **Vagrantfile** gespeichert.
+
+**Was bedeutet die Fehlermeldung: "A Vagrant environment or target machine is required to run this command."?**
+
+> Diese Meldung besagt, dass der Befehl in einem Verzeichnis ausgeführt wurde, in dem keine gültige `Vagrantfile`-Konfiguration vorhanden ist.
+
+**Bei welcher LPI-Zertifizierung nützt mir das Wissen über Vagrant?**
+
+> Das Wissen ist besonders wertvoll für die Zertifizierung zum [LPI DevOps Tools Engineer](https://www.lpi.org/our-certifications/devops-overview).
